@@ -1,0 +1,339 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #fbfbfb;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 10px; 
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    .text-container {
+        padding: 10px; 
+    }
+}
+#background-image {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+    z-index: -1;
+}
+
+header {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    font-weight: bold;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfbfb;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size:16px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+}
+
+nav a:hover,
+.dropdown:hover .dropbtn {
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.rounded-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-container-contacts {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    text-align: center;
+    margin: 120px 0 400px 0;
+}
+
+.button {
+    text-align: end;
+    margin-top:70px;
+    margin-right: 40px;
+}
+
+.download-button img {
+    vertical-align: middle;
+    width: 20px; /* Adjust the width to your preference */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+
+.download-button, #button {
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    height: auto;
+    width: auto;
+    padding: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none; 
+    background-color: transparent; 
+    color: black;
+}
+
+.download-button:hover {
+    border-bottom: solid 2px black;
+    padding-bottom: 3px;
+}
+
+.cv {
+    width: 100%;
+    margin:left;
+   text-align: justify;
+ 
+}
+
+.key-responsabilities {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: small;
+}
+
+h5 {
+    margin: 0 0 0 10px;
+    line-height: 1.4 ;
+}
+
+h3 {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    margin: 20px 0 10px 0;
+}
+
+h6 {
+    margin: 0 0 20px 10px;
+}
+
+.text-header {
+
+    margin: 35px 0 0 0;
+}
+
+.summary {
+    margin-top: 50px;
+}
+
+.divider {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .line {
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: #333; /* Adjust the color as needed */
+  }
+  
+  .cross {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333; /* Adjust the color as needed */
+    border-radius: 50%;
+    transform: rotate(45deg);
+    margin: 0 10px;
+  }
+
+  .volunteering {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-bottom: 30px;
+
+  }
+
+  .profile {
+    margin-top: 120px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.popup-content {
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px 10px 50px 10px;
+    width: 50%; 
+    height: 80vh; 
+    overflow: hidden; 
+}
+
+#openFormButton{
+    margin-top: 25px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    background-color: transparent; 
+    color: black;
+}
+
+#openFormButton:hover{
+    border-bottom: solid 2px black;
+}
+
+.closeform {
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    height: 10px;
+    width: auto;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    background-color: transparent; 
+    color: black;
+}
+
+.closeform:hover{
+    border-bottom: solid 2px black;
+}
+
+.text-container-index{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.text-container-projects{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+.portfolio-container{
+    display: flex;
+    height: 25%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.portfolio-item{
+    width: 48%;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: center;
+}
+
+.expand-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #007BFF;
+  }
+
+  .expanded {
+    height: auto ;
+    overflow: visible;
+  }
+
+
+h4{
+    padding-top: 40px;
+}
+
+#outsystems apps{
+    margin-top: 200px;
+}
+
+a {
+    text-decoration: none;
+}

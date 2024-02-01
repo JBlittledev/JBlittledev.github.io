@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MyStyle.css">
+    <script src="js/navigation.js" defer></script>
+    <title>JB virtualCV - Home</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>the biologist who wants to be developer</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">home</a>
+        <a href="about me.html">about me</a>
+        <a href="cv.html">CV</a>
+        <a href="outsystems apps.html">projects</a>
+        <a href="education.html">education</a>
+        <a href="contacts.html">get in touch</a>
+    </nav>
+
+    <div class="text-container-contacts">
+            <p>Email: <a href="mailto:joaobernardo.work@gmail.com">joaobernardo.work@gmail.com</a></p>
+            <p>Phone: +351 925 998 068</p>
+            <p>Location: Lisboa</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jb10655984" target="_blank">linkedin.com/in/jb10655984</a></p>
+
+            <button id="openFormButton">give me some feedback</button>
+
+         <div class="popup" id="formPopup">
+              <div class="popup-content">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoGA5Ol2xoObZ_tzsBu-Y4JeicdaurhezcUljMfxKP683hcA/viewform?embedded=true" width="100%" height="100%"></iframe>
+                  <button class="closeform" onclick="closeForm()">close form</button>
+               </div>
+          </div>
+        </div>
+        
+
+    <script>
+        document.getElementById('openFormButton').addEventListener('click', openForm);
+
+        function openForm() {
+            document.getElementById('formPopup').style.display = 'flex';
+        }
+
+        function closeForm() {
+            document.getElementById('formPopup').style.display = 'none';
+        }
+    </script>
+    </div>
+
+    
+    
+
+</body>
+
+</html>
